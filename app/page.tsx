@@ -8,6 +8,8 @@ import WhyChooseUs from '@/components/why-choose-us';
 import Recipes from '@/components/recipes';
 import Testimonials from '@/components/testimonials';
 import Contact from '@/components/contact';
+import SocialMedia from '@/components/social-media';
+import FAQ from '@/components/faq';
 import Link from 'next/link';
 import { products } from '@/lib/products';
 import { useCart } from '@/lib/cart-context';
@@ -125,6 +127,12 @@ export default function Home() {
 
         {/* Testimonials Section */}
         <Testimonials />
+
+        {/* Social Media Section */}
+        <SocialMedia />
+
+        {/* FAQ Section */}
+        <FAQ />
 
         {/* Contact Section */}
         <Contact />

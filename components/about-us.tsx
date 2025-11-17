@@ -22,7 +22,7 @@ export default function AboutUs() {
           {/* Image */}
           <div className="relative">
             <img
-              src="/cajun-food-plating-presentation.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2F047d1840961a481cb83b4782a1b2b517%2Faaa2e04a13c24e2ea14862c464a2d594?format=webp&width=800"
               alt="Our Story"
               className="w-full rounded-lg shadow-lg"
             />

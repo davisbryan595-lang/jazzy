@@ -18,7 +18,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="bg-background border-b border-border z-40 shadow-sm">
+    <header className="sticky top-0 bg-background border-b border-border z-40 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition">
