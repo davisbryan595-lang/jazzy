@@ -12,7 +12,7 @@ export const socialLinks = {
     ],
   },
   facebook: {
-    pageUrl: 'https://www.facebook.com/JazzyjeatzsSeasonings', // Update with your Facebook page URL
+    pageUrl: 'https://www.facebook.com/JazzyJEatz', // Update with your Facebook page URL
     // Facebook Page ID for embedded feed (optional, requires Meta App setup)
     pageId: 'YOUR_FACEBOOK_PAGE_ID',
   },
