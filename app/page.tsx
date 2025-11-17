@@ -128,6 +128,12 @@ export default function Home() {
         {/* Testimonials Section */}
         <Testimonials />
 
+        {/* Social Media Section */}
+        <SocialMedia />
+
+        {/* FAQ Section */}
+        <FAQ />
+
         {/* Contact Section */}
         <Contact />
       </main>
