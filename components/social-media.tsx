@@ -131,37 +131,85 @@ export default function SocialMedia() {
           </div>
         )}
 
-        {/* Facebook Feed Section */}
+        {/* Facebook Community Section */}
         {socialMediaConfig.enableFacebook && (
           <div className="mb-8">
             <h3 className="font-serif text-3xl font-bold text-foreground mb-8 text-center">
               Facebook Community
             </h3>
-            <div className="bg-card border border-border rounded-lg p-8 text-center">
-              <div
-                style={{
-                  height: `${socialMediaConfig.facebookFeedHeight}px`,
-                  overflow: 'hidden',
-                }}
-                className="flex items-center justify-center bg-muted/20 rounded"
-              >
-                {/* Facebook SDK would be loaded here for dynamic feed */}
-                <div className="text-center">
-                  <Facebook className="w-16 h-16 text-blue-600 mx-auto mb-4 opacity-50" />
-                  <p className="text-muted-foreground mb-4">
-                    Facebook Posts & Community Updates
-                  </p>
-                  <p className="text-sm text-muted-foreground mb-6">
-                    To enable the live Facebook feed, update the Facebook Page ID in lib/social-config.ts
-                  </p>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              {/* Facebook Profile Preview */}
+              <div className="bg-white rounded-lg border border-gray-200 overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                {/* Profile Banner */}
+                <div className="h-32 bg-gradient-to-r from-blue-600 to-blue-400"></div>
+
+                {/* Profile Content */}
+                <div className="px-4 pb-4">
+                  {/* Profile Picture */}
+                  <div className="flex justify-center -mt-16 mb-4">
+                    <img
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Ls2NdI4MmQIIFzBjEUPmmtjlLlDaFR.png"
+                      alt="Jazzyjeatz Seasoning"
+                      className="w-24 h-24 rounded-full border-4 border-white shadow-lg object-cover bg-white"
+                    />
+                  </div>
+
+                  {/* Profile Info */}
+                  <div className="text-center mb-4">
+                    <h4 className="font-bold text-lg text-gray-900 mb-1">Jazzy JEatz</h4>
+                    <p className="text-sm text-gray-600 mb-3">Brand • Premium Cajun Seasoning</p>
+                    <p className="text-sm text-gray-700 leading-relaxed mb-4">
+                      Authentic Louisiana Cajun seasoning bringing bold, unforgettable flavors to your kitchen. Premium quality, authentic taste.
+                    </p>
+                  </div>
+
+                  {/* Stats */}
+                  <div className="grid grid-cols-3 gap-4 py-4 border-t border-b border-gray-200 text-center mb-4">
+                    <div>
+                      <p className="font-bold text-gray-900">Follow</p>
+                      <p className="text-xs text-gray-600">Connect</p>
+                    </div>
+                    <div>
+                      <p className="font-bold text-gray-900">Message</p>
+                      <p className="text-xs text-gray-600">Chat</p>
+                    </div>
+                    <div>
+                      <p className="font-bold text-gray-900">Share</p>
+                      <p className="text-xs text-gray-600">Posts</p>
+                    </div>
+                  </div>
+
+                  {/* Action Button */}
                   <a
                     href={socialLinks.facebook.pageUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block bg-blue-600 text-white px-6 py-2 rounded font-semibold hover:bg-blue-700 transition"
+                    className="block w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg transition text-center"
                   >
-                    Visit Facebook Page
+                    Follow on Facebook
                   </a>
+                </div>
+              </div>
+
+              {/* Facebook Feed Placeholder */}
+              <div className="bg-card border border-border rounded-lg p-8 text-center">
+                <div
+                  style={{
+                    height: `${socialMediaConfig.facebookFeedHeight}px`,
+                    overflow: 'hidden',
+                  }}
+                  className="flex items-center justify-center bg-muted/20 rounded"
+                >
+                  {/* Facebook SDK would be loaded here for dynamic feed */}
+                  <div className="text-center">
+                    <Facebook className="w-16 h-16 text-blue-600 mx-auto mb-4 opacity-50" />
+                    <p className="text-muted-foreground mb-4">
+                      Facebook Posts & Community Updates
+                    </p>
+                    <p className="text-sm text-muted-foreground mb-6">
+                      To enable the live Facebook feed, update the Facebook Page ID in lib/social-config.ts
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
