@@ -137,7 +137,7 @@ export default function SocialMedia() {
             <h3 className="font-serif text-3xl font-bold text-foreground mb-8 text-center">
               Facebook Community
             </h3>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="max-w-2xl mx-auto">
               {/* Facebook Profile Preview */}
               <div className="bg-white rounded-lg border border-gray-200 overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
                 {/* Profile Banner */}
@@ -188,28 +188,6 @@ export default function SocialMedia() {
                   >
                     Follow on Facebook
                   </a>
-                </div>
-              </div>
-
-              {/* Facebook Feed Placeholder */}
-              <div className="bg-card border border-border rounded-lg p-8 text-center">
-                <div
-                  style={{
-                    height: `${socialMediaConfig.facebookFeedHeight}px`,
-                    overflow: 'hidden',
-                  }}
-                  className="flex items-center justify-center bg-muted/20 rounded"
-                >
-                  {/* Facebook SDK would be loaded here for dynamic feed */}
-                  <div className="text-center">
-                    <Facebook className="w-16 h-16 text-blue-600 mx-auto mb-4 opacity-50" />
-                    <p className="text-muted-foreground mb-4">
-                      Facebook Posts & Community Updates
-                    </p>
-                    <p className="text-sm text-muted-foreground mb-6">
-                      To enable the live Facebook feed, update the Facebook Page ID in lib/social-config.ts
-                    </p>
-                  </div>
                 </div>
               </div>
             </div>
