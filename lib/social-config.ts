@@ -6,9 +6,9 @@ export const socialLinks = {
     channelUrl: 'https://www.youtube.com/@jazzyjeatz3343',
     // Video IDs for embedded videos - replace with your actual video IDs
     videos: [
-      'dQw4w9WgXcQ', // Placeholder video 1
-      'dQw4w9WgXcQ', // Placeholder video 2
-      'dQw4w9WgXcQ', // Placeholder video 3
+      'Jdhco52Bjcw', // Video 1
+      'Jdhco52Bjcw', // Video 2
+      'MKcAqmmNvio', // Video 3
     ],
   },
   facebook: {
